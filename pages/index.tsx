@@ -1,12 +1,9 @@
 import { NextPage } from 'next'
-import Link from 'next/link'
+
 import Layout from '../components/Layout'
 
 import styled from 'styled-components'
-import { Elements } from '@stripe/react-stripe-js'
-import getStripe from '../utils/get-stripejs'
-
-import ElementsForm from '../components/ElementsForm'
+import DonateModal from '../components/DonateModal';
 
 const ImageDiv = styled.div`
   display: flex;
@@ -19,6 +16,7 @@ const Image = styled.img`
 `;
 
 const IndexPage: NextPage = () => {
+
   return (
     <Layout title="ONG Amor de 4 Patas Home Page">
       <div className="page-container">
@@ -52,19 +50,10 @@ const IndexPage: NextPage = () => {
               <li>10. Colher hemogramas de controle anual. </li>
             </ul>
           </p>
-          
+
           <h1>Help Support Our Efforts</h1>
           <p>Donate to our project 💖</p>
-          <Link href='/home'>
-            <a className='sidebar__btn_donate'>
-              <button>
-                Donate
-              </button>
-            </a>
-          </Link>
-          {/* <Elements stripe={getStripe()}>
-            <ElementsForm />
-          </Elements> */}
+          <DonateModal />
       </div>
     </Layout>
   )

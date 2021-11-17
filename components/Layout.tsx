@@ -2,6 +2,8 @@ import React, { ReactNode } from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
 
+import DonateModal from '../components/DonateModal'
+
 type Props = {
   children: ReactNode
   title?: string
@@ -54,13 +56,7 @@ const Layout = ({
             <br />
             the Nonprofit Organization Amor de 4 Patas
           </h1>
-          {/* <Link href='/home'>          
-            <a>
-              <button>
-                Share
-              </button>
-            </a>
-          </Link> */}
+          <DonateModal />
           <Link href='/home'>
             <a className='sidebar__btn_donate'>
               <button>
