@@ -233,6 +233,11 @@ button:disabled {
   width: 4px;
 }
 
+/* Sidebar */
+a.sidebar__btn_donate button {
+  background: orange;
+}
+
 /* Code block */
 code,
 pre {
