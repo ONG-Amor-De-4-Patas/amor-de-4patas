@@ -8,16 +8,18 @@ import Layout from '../components/Layout'
 import ElementsForm from '../components/ElementsForm'
 
 const ImageDiv = styled.div`
-    display: flex;
-    overflow-x: scroll;
-    overflow-y: hidden;
+  display: flex;
+  overflow-x: scroll;
+  height: 250px;
 `;
 
 const Image = styled.img`
-    height: 250px;
+  height: 100%;
 `;
 
 const HomePage: NextPage = () => {
+  const IMG_HEIGHT = 250;
+
   return (
     <Layout title="Home | Next.js + TypeScript Example">
       <div className="page-container">
@@ -43,9 +45,9 @@ const HomePage: NextPage = () => {
           <h2>Pictures</h2>
           <ImageDiv>
               <Image src='/sasha-sashina-Xcscr_sNSEY-unsplash.jpeg' alt='dog in shelter' />
-              <Image src='/thomas-park-On6bRQRn5lY-unsplash.jpeg' alt='dog in shelter' />
-              <Image src='/chetan-hireholi-IEMJO7CvK7I-unsplash.jpeg' alt='dog in shelter' />
-              <Image src='/nrd-MTHt9XoDzrg-unsplash.jpeg' alt='dog in shelter' />
+              <Image src='/thomas-park-On6bRQRn5lY-unsplash.jpeg' alt='cat in shelter' />
+              <Image src='/chetan-hireholi-IEMJO7CvK7I-unsplash.jpeg' alt='shelter' />
+              <Image src='/nrd-MTHt9XoDzrg-unsplash.jpeg' alt='cat in cage' />
           </ImageDiv>
           <h2>Footer</h2>
       </div>

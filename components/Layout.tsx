@@ -16,16 +16,29 @@ const Layout = ({
       <title>{title}</title>
       <meta charSet="utf-8" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+
+      {/* <!-- Essential META Tags --> */}
+      <meta property="og:title" content="ONG Amor de 4 Patas" />
+      <meta property="og:type" content="website" />
+      <meta property="og:image" content="https://www.amorde4patas.org" />
+      <meta property="og:url" content="https://www.amorde4patas.org" />
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:site" content="@thorwebdev" />
-      <meta name="twitter:title" content="TypeScript Next.js Stripe Example" />
+
+      {/* <!-- Non-Essential, But Recommended --> */}
+      <meta property="og:description" content="Nonprofit Organization for Animals Shelters based in Tabuleiro do Norte, CE, Brazil" />
+      <meta property="og:site_name" content="ONG Amor de 4 Patas" />
+      <meta name="twitter:image:alt" content="Alt text for image" />
+
+      {/* <!-- Non-Essential, But Required for Analytics --> */}
+      <meta name="twitter:site" content="" />
+      <meta name="twitter:title" content="ONG Amor de 4 Patas" />
       <meta
         name="twitter:description"
-        content="Full-stack TypeScript example using Next.js, react-stripe-js, and stripe-node."
+        content="Nonprofit Organization for Animals Shelters based in Tabuleiro do Norte, CE, Brazil"
       />
       <meta
         name="twitter:image"
-        content="https://nextjs-typescript-react-stripe-js.vercel.app/social_card.png"
+        content=""
       />
     </Head>
     <div className="container">

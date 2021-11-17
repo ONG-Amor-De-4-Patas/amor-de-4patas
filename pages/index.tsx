@@ -30,6 +30,13 @@ const IndexPage: NextPage = () => {
             </a>
           </Link>
         </li>
+        <li>
+          <Link href="/home">
+            <a className="card">
+              <h2>Home</h2>
+            </a>
+          </Link>
+        </li>
       </ul>
     </Layout>
   )
