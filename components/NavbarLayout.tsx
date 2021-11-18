@@ -46,9 +46,9 @@ const NavbarLayout = ({
     <div className="global-layout">
         <div className="navbar">
             <div className="navbar-content">
-            <Link href='#'>
+            <Link href='/'>
                 <a>
-                    Test
+                    Home
                 </a>
             </Link>
             <Link href="/">
@@ -56,15 +56,15 @@ const NavbarLayout = ({
                 <img src="/logo.jpeg" />
                 </a>
             </Link>
-            <Link href='#'>
+            <Link href='/about-us'>
                 <a>
-                    Test 2
+                    About Us
                 </a>
             </Link>
             </div>
         </div>
         <section>
-        {children}
+          {children}
         </section>
         <Footer />
     </div>
