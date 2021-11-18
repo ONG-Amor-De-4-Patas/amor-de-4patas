@@ -234,7 +234,7 @@ button:disabled {
 }
 
 /* Sidebar */
-a.sidebar__btn_donate button {
+.sidebar__btn_donate {
   background: orange;
 }
 
@@ -256,6 +256,15 @@ a.sidebar__btn_donate button {
   width: auto;
   margin: 0.5rem;
   pointer-events: none;
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 576px) {
+  .modal-dialog {
+      max-width: 500px;
+      margin: 1.75rem auto;
+  }
 }
 
 .modal-open .modal {
@@ -265,6 +274,48 @@ a.sidebar__btn_donate button {
 
 .modal-open {
   overflow: hidden;
+}
+
+.modal-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  pointer-events: auto;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 0 solid rgba(0,0,0,0.2);
+  border-radius: 0.4375rem;
+  box-shadow: 0 15px 35px rgb(50 50 93 / 20%), 0 5px 15px rgb(0 0 0 / 17%);
+  outline: 0;
+}
+
+.modal-content button {
+  width: auto;
+  margin-left: 10px;
+}
+
+.modal-header {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: 1px solid #dee2e6;
+  border-top-left-radius: calc(0.3rem - 1px);
+  border-top-right-radius: calc(0.3rem - 1px);
+}
+
+.modal-footer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0.75rem;
+  border-top: 1px solid #dee2e6;
+  border-bottom-right-radius: calc(0.3rem - 1px);
+  border-bottom-left-radius: calc(0.3rem - 1px);
 }
 
 /* Code block */

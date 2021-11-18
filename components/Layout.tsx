@@ -57,13 +57,6 @@ const Layout = ({
             the Nonprofit Organization Amor de 4 Patas
           </h1>
           <DonateModal />
-          <Link href='/home'>
-            <a className='sidebar__btn_donate'>
-              <button>
-                Donate
-              </button>
-            </a>
-          </Link>
         </div>
       </header>
       {children}

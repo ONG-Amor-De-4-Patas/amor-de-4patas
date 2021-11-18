@@ -9,11 +9,12 @@ function DonateModal() {
   return (
     <>
       <Button
+        className='sidebar__btn_donate'
         color="primary"
         type="button"
         onClick={() => setModalOpen(!modalOpen)}
       >
-        Launch demo modal
+        Donate
       </Button>
       <Modal toggle={() => setModalOpen(!modalOpen)} isOpen={modalOpen}>
         <div className="modal-header">
