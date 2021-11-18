@@ -21,7 +21,7 @@ function DonateModal() {
       <Modal toggle={() => setModalOpen(!modalOpen)} isOpen={modalOpen}>
         <div className="modal-header">
           <h5 className="modal-title" id="exampleModalLabel">
-            Modal title
+            Make a Donation to Amor de 4 Patas
           </h5>
           <button
             aria-label="Close"

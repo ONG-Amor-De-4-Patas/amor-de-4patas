@@ -48,7 +48,7 @@ const Layout = ({
         <div className="header-content">
           <Link href="/">
             <a className="logo">
-              <img src="/logo.png" />
+              <img src="/logo.jpeg" />
             </a>
           </Link>
           <h1>
