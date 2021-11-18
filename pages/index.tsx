@@ -1,19 +1,8 @@
 import { NextPage } from 'next'
 
 import Layout from '../components/Layout'
-
-import styled from 'styled-components'
 import DonateModal from '../components/DonateModal';
-
-const ImageDiv = styled.div`
-  display: flex;
-  overflow-x: scroll;
-  height: 250px;
-`;
-
-const Image = styled.img`
-  height: 100%;
-`;
+import ImageSlideShow from '../components/ImageSlideShow';
 
 const IndexPage: NextPage = () => {
 
@@ -29,12 +18,7 @@ const IndexPage: NextPage = () => {
           <h4>To support stray animals to live a better life and bring the community together with animals</h4>
   
           <h2>Our Animals up for Adoption</h2>
-          <ImageDiv>
-              <Image src='/sasha-sashina-Xcscr_sNSEY-unsplash.jpeg' alt='dog in shelter' />
-              <Image src='/thomas-park-On6bRQRn5lY-unsplash.jpeg' alt='cat in shelter' />
-              <Image src='/chetan-hireholi-IEMJO7CvK7I-unsplash.jpeg' alt='shelter' />
-              <Image src='/nrd-MTHt9XoDzrg-unsplash.jpeg' alt='cat in cage' />
-          </ImageDiv>
+          <ImageSlideShow />
 
           <h2>Our Priorities</h2>
           <p>

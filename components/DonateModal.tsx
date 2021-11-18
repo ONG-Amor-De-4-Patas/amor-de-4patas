@@ -3,6 +3,8 @@ import { useState } from 'react'
 // reactstrap components
 import { Button, Modal, ModalBody, ModalFooter } from "reactstrap"
 
+import CheckoutForm from '../components/CheckoutForm'
+
 function DonateModal() {
   const [modalOpen, setModalOpen] = useState(false);
 
@@ -30,7 +32,9 @@ function DonateModal() {
             <span aria-hidden={true}>×</span>
           </button>
         </div>
-        <ModalBody>...</ModalBody>
+        <ModalBody>
+          <CheckoutForm />
+        </ModalBody>
         <ModalFooter>
           <Button
             color="secondary"

@@ -14,6 +14,7 @@ export default async function handler(
   res: NextApiResponse
 ) {
   if (req.method === 'POST') {
+    console.log(req.headers)
     const amount: number = req.body.amount
     try {
       // Validate the amount that was passed from the client.
@@ -33,7 +34,7 @@ export default async function handler(
           },
         ],
         success_url: `${req.headers.origin}/result?session_id={CHECKOUT_SESSION_ID}`,
-        cancel_url: `${req.headers.origin}/donate-with-checkout`,
+        cancel_url: `${req.headers.origin}/`,
       }
       const checkoutSession: Stripe.Checkout.Session =
         await stripe.checkout.sessions.create(params)
