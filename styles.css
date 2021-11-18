@@ -32,6 +32,30 @@ body {
   justify-content: center;
 }
 
+.global-layout {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar-content {
+  height: 50px;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 45px 5px 45px;
+  padding-bottom: 5px;
+  border-bottom: solid #3f3f3f 1px;
+}
+
+.navbar a {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-content img {
+  height: 100%;
+}
+
 .container {
   max-width: var(--container-width-max);
   padding: 45px 25px;
@@ -83,7 +107,7 @@ header {
   top: 45px;
 }
 
-.logo img {
+section .logo img {
   width: 100%;
   margin-bottom: 52px;
 }

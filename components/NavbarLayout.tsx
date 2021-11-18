@@ -2,7 +2,6 @@ import React, { ReactNode } from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
 
-import DonateModal from '../components/DonateModal'
 import Footer from './Footer'
 
 type Props = {
@@ -10,7 +9,7 @@ type Props = {
   title?: string
 }
 
-const Layout = ({
+const NavbarLayout = ({
   children,
   title = 'Amor de 4 Patas',
 }: Props) => (
@@ -44,46 +43,32 @@ const Layout = ({
         content=""
       />
     </Head>
-    <div className="container">
-      <header>
-        <div className="header-content">
-          <Link href="/">
-            <a className="logo">
-              <img src="/logo.jpeg" />
-            </a>
-          </Link>
-          <h1>
-            <span className="light">Support the Animals at</span>
-            <br />
-            the Nonprofit Organization Amor de 4 Patas
-          </h1>
-          <DonateModal />
+    <div className="global-layout">
+        <div className="navbar">
+            <div className="navbar-content">
+            <Link href='#'>
+                <a>
+                    Test
+                </a>
+            </Link>
+            <Link href="/">
+                <a className="logo">
+                <img src="/logo.jpeg" />
+                </a>
+            </Link>
+            <Link href='#'>
+                <a>
+                    Test 2
+                </a>
+            </Link>
+            </div>
         </div>
-      </header>
-      {children}
+        <section>
+        {children}
+        </section>
+        <Footer />
     </div>
-    {/* <div className="banner">
-      <span>
-        This is a{' '}
-        <a
-          href="https://github.com/stripe-samples"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Stripe Sample
-        </a>
-        .{' View code on '}
-        <a
-          href="https://github.com/vercel/next.js/tree/canary/examples/with-stripe-typescript"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          GitHub
-        </a>
-        .
-      </span>
-    </div> */}
   </>
 )
 
-export default Layout
+export default NavbarLayout
