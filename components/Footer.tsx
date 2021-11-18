@@ -9,6 +9,12 @@ const Footer = () => {
         <div className="footer-row">
 
           <div className="footer-col">
+            <h6>Logo</h6>
+            <ul className="footer-links">
+              <li><a href="#">English</a></li>
+            </ul>
+          </div>
+          <div className="footer-col">
             <h6>Quick Links</h6>
             <ul className="footer-links">
               <li><a href="#">About Us</a></li>
@@ -20,7 +26,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="footer-container">
+      <div className="footer-container footer-bottom-border">
         <div className="footer-row">
           <div className="footer-col">
             <p className="copyright-text">Copyright &copy; 2017 All Rights Reserved by 
@@ -30,7 +36,16 @@ const Footer = () => {
 
           <div className="footer-col">
             <ul className="footer_social-icons">
-              <li><a className="instagram" href="#"><FontAwesomeIcon icon={faInstagram}/></a></li> 
+              <li>
+                <a 
+                  className="instagram" 
+                  target="_blank"
+                  rel="noopener noreferrer" 
+                  href="https://www.instagram.com/__amorde4patas/?hl=pt"
+                >
+                    <FontAwesomeIcon icon={faInstagram}/>
+                </a>
+              </li> 
             </ul>
           </div>
         </div>
