@@ -1,10 +1,24 @@
 {
   "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
     "dev": "next",
     "build": "next build && next export",
-    "start": "next start"
+    "start": "next start -p 8000"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicopierson/amor-de-4patas.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nicopierson/amor-de-4patas/issues"
+  },
+  "homepage": "https://github.com/nicopierson/amor-de-4patas#readme",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/free-brands-svg-icons": "^5.15.4",
