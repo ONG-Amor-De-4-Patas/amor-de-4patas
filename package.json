@@ -7,7 +7,7 @@
     "dev": "next",
     "test": "echo 'TODO Test'",
     "build": "next build && next export",
-    "start": "next start -p 8000"
+    "start": "next start -p $PORT"
   },
   "repository": {
     "type": "git",
