@@ -1,0 +1,38 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches: 
+      - main
+
+jobs:
+  build:
+    runs-on: macos-latest
+    name: Build
+    steps:
+      - name: Install yarn
+        run: brew install yarn
+      - uses: actions/checkout@v2
+      - name: yarn install
+        run: yarn install
+      - name: yarn build
+        run: yarn build 
+      - name: yarn test
+        run: yarn test
+      - name: Package
+        run: zip -r app.zip package.json .next
+      - name: Deploy to EB
+        if: startsWith(github.ref, 'refs/for/main')
+        uses: einaregilsson/beanstalk-deploy@v20
+        with:
+          aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          application_name: amor-de-4patas
+          environment_name: amor-de-4patas-prod
+          version_label: 1
+          region: us-west-1
+          deployment_package: app.zip
+    
