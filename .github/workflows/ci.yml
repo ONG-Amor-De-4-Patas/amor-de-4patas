@@ -25,7 +25,7 @@ jobs:
       - name: Package
         run: zip -r app.zip package.json .next
       - name: Deploy to EB
-        if: startsWith(github.ref, 'refs/for/main')
+        if: startsWith(github.ref, 'refs/heads/main')
         uses: einaregilsson/beanstalk-deploy@v20
         with:
           aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
