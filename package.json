@@ -1,13 +1,13 @@
 {
   "private": true,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "next",
     "test": "echo 'TODO Test'",
     "build": "next build && next export",
-    "start": "next start -p $PORT"
+    "start": "next start -p 8080"
   },
   "repository": {
     "type": "git",
